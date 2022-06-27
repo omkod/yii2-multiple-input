@@ -454,6 +454,10 @@
 
         var data = wrapper.data('multipleInput'),
             attributeOptions = {};
+        
+        if (data === undefined) {
+            return;
+        }
 
         // try to find options for embedded attribute at first.
         // For example the id of new input is example-1-field-0.
